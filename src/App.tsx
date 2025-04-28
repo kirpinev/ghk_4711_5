@@ -95,6 +95,9 @@ export const App = () => {
     window.gtag("event", "4711_get_sub", {
       variant_name: "4711_5",
     });
+    window.location.replace(
+        "alfabank://sdui_screen?screenName=InvestmentLongread&fromCurrent=true&endpoint=v1/invest-main-screen-view/investment-longread/50373%3flocation=AM%26campaignCode=GH",
+    );
 
     LS.setItem(LSKeys.ShowThx, true);
   };
@@ -229,7 +232,6 @@ export const App = () => {
           block
           view="primary"
           onClick={submit}
-          href="alfabank:///sdui_screen?screenName=InvestmentLongread&fromCurrent=true&endpoint=v1/invest-main-screen-view/investment-longread/50373%3flocation=AM%26campaignCode=GH"
         >
           Подключить
         </ButtonMobile>
